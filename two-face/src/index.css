@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#sun, #cloud, #stars, #dark, #light{
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+}
+#moon {
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 0.9s;
+}
