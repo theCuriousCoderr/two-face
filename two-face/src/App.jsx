@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ToggleSwitch from './components/ToggleSwitch'
 
 function App() {
+  const [theme, setTheme] = useState("light")
+
   return (
-    <div className='bg-white h-screen'>
-      <ToggleSwitch />
+    <div id="container" className={` ${theme === "light" ? "bg-white" : "bg-gray-950" } flex items-center justify-center h-screen`}>
+      <ToggleSwitch setTheme={setTheme} />
     </div>
   )
 }

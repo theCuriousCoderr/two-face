@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-#sun, #cloud, #stars, #dark, #light{
+#sun, #cloud, #stars, #dark, #light, #container {
   transition-property: all;
   transition-timing-function: ease-in;
   transition-duration: 1s;
