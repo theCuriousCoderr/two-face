@@ -10,7 +10,7 @@ function ToggleSwitch({setTheme}) {
     <>
       <div className=" relative w-48 mx-auto z-30 flex items-center justify-center">
         {/* button container */}
-        <button className="relative w-full h-20 mx-auto border-4 border-slate-900 box-content rounded-full shadow-inne shadow-sky-800 drop-shadow-lg overflow-hidden">
+        <button className="relative w-full h-20 mx-auto border-4 border-transparent box-content rounded-full shadow-inne shadow-sky-800 drop-shadow-lg overflow-hidden">
           {/* Dark Mode */}
           <div
             id="dark"
