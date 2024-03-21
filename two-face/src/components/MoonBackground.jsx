@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import star from "../images/white_star_3x.png"
-import doom from "../audio/doom.mp3"
+import doom from "../audio/hedwigTheme.mp3"
 
 function MoonBackground({theme}) {
 
