@@ -3,13 +3,42 @@
 @tailwind utilities;
 
 
-#sun, #cloud, #stars, #dark, #light, #container {
-  transition-property: all;
-  transition-timing-function: ease-in;
-  transition-duration: 1s;
+#sun {
+  transition: all .5s ease-in;
 }
 #moon {
-  transition-property: all;
-  transition-timing-function: ease-in;
-  transition-duration: 0.9s;
+ transition: all .6s ease-in;
+}
+
+#container, #cloudTop, #cloudBottom, #moonbg {
+  transition: all .5s ease-in;
+}
+
+.twinkle1 {
+  animation: twinkle 2s ease-in-out 1s infinite alternate-reverse;
+  /* transition: all 4s ease-in-out; */
+}
+.twinkle2 {
+  animation: twinkle 2s ease-in-out infinite alternate-reverse;
+  /* transition: all 4s ease-in-out; */
+}
+/* .spin {
+  animation: spin 4s ease-in-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(var(calc(sin(45))))
+  }
+} */
+
+@keyframes twinkle {
+  from {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

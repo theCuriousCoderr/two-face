@@ -1,15 +1,19 @@
-import React from "react";
-import SunRays from "./SunRays";
+import React, { useEffect, useState } from "react";
+// import SunRays from "./SunRays";
 
-function Sun() {
+function Sun({theme, setTheme}) {
+  const [sunState, setSunState] = useState(theme)
+  useEffect(() => {
+    if (theme !== "light") {
+      setTimeout(() => {
+        setSunState("dark")
+      }, 400)
+    } else {
+      setSunState("light")
+    }
+  }, [theme])
   return (
-    <div id="sun" className="hidde absolute top-0 left-0 h-full">
-      <div className="absolute">
-       <SunRays />
-      </div>
-      <div className="relative z-30 px-3 py-2 h-full">
-        <div className="absolute h-[80%] aspect-square rounded-full bg-yellow-400 shadow-xl shadow-gray-600"></div>
-      </div>
+    <div id="sun" onClick={() => {setTheme("dark")}} className={`h-[80%] aspect-square rounded-full absolute top-[10%] ${sunState === "light" ? "left-[5%] bg-yellow-400 z-20" : "left-[40%] opacity-0"} ${theme === "dark" ? "left-[40%]" : "left-[5%] bg-yellow-400" }  `}>
     </div>
   );
 }
