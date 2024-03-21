@@ -11,7 +11,7 @@ function ToggleSwitch({ theme, setTheme }) {
     <>
       <div className=" relative w-48 mx-auto flex items-center justify-center">
         {/* button container */}
-        <button className={`relative w-full h-20 mx-auto border ${theme === "light" ? "border-slate-100" : "border-slate-700" } outline-none box-content rounded-full shadow-inne shadow-sky-800 drop-shadow-lg overflow-hidden`}>
+        <button className={`relative w-full h-20 mx-auto border ${theme === "light" ? "border-slate-400" : "border-slate-700" } outline-none box-content rounded-full shadow-inne shadow-sky-800 drop-shadow-lg overflow-hidden`}>
           <CloudBottom theme={theme} />
           <Sun theme={theme} setTheme={setTheme} />
           <CloudTop theme={theme} />

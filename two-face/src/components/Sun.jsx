@@ -7,7 +7,7 @@ function Sun({theme, setTheme}) {
     if (theme !== "light") {
       setTimeout(() => {
         setSunState("dark")
-      }, 400)
+      }, 300)
     } else {
       setSunState("light")
     }

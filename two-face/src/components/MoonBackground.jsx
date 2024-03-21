@@ -7,7 +7,7 @@ function MoonBackground({theme}) {
   return (
     <div id="moonbg" className={`relative w-full h-full ${theme === "light" ? "opacity-0" : "opacity-1" }`}>
         <div>
-            <p className='text-slate-300 text-center pt-20 text-lg animate-pulse'>Music is playing .... </p>
+            <p className='text-slate-300 text-center pt-20 text-lg xl:text-5xl animate-pulse'>Music is playing .... </p>
         </div>
         <div>
             <audio autoPlay>
